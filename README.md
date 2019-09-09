@@ -10,9 +10,14 @@ This project is based on one of my Gatsby Repo: "gatsby-markdown-blog".
 * Set /pages/blog.js to display all blog posts from Contentful;
 * create a query with "allContentfulBlogPost" and render a list of posts;
 
-### step-02
+#### step-02
 * Create dynamic pages for each post;
 * Inside "gatsby-node" remove onCreateNode [slugs are defined in Contentful] and modify ".createPages" [see file];
 * Modify Blog Template to render a blog post properly;
 * install @contentful/rich-text-react-renderer and use it inside Blog Template;
 * create 'options' to display images and other assets;
+
+#### step-03
+* Create "404.js";
+* Add "React-Helmet" for setting up head of our pages;
+* Create the Head components and add it to any pages and blog template;

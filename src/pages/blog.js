@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "../components/Layout";
+import Head from "../components/Head";
 import { Link, graphql, useStaticQuery } from "gatsby";
 
 const BlogPage = () => {
@@ -25,6 +26,7 @@ const BlogPage = () => {
 
   return (
     <Layout>
+      <Head pageTitle="Blog" />
       <h1>Blog Page</h1>
       <ol className="posts">
         {posts.map(post => {
